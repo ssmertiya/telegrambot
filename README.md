@@ -27,12 +27,13 @@ Database: MongoDB Atlas
 3.Install telegram-bot and MongoDB libraries: - Both libraries are installed locally using this command (pip install python-telegram-bot pymongo) these are installed connection established between python and telegram as well as python and MongoDB.<br>
 <br>
 4.Signup MongoDB Atlas account and create free cluster of 512 MB storage then create username and password for this cluster additionally configure IP addresses to allow access for authorized person after that it provides connection string to connect this cluster.<br>
-
+<br>
 •	Username: - “Put_Cluster_username”<br>
 •	Password: - “Put_Cluster_password”<br>
 •	Connection String: - “mongodb+srv://<username>:<db_password>@<cluster_name>.fy4hf.mongodb.net/?retryWrites=true&w=majority&appName=<cluster_name>”<br>
 •	In this string we have to put db_password and authSource=admin, if we get authentication error.<br>
 •	Revised String: - “mongodb+srv://<username>:<db_password>@<cluster_name>.fy4hf.mongodb.net/?retryWrites=true&w=majority&appName=<cluster_name>”&authSource=admin<br>
+<br>
 •	If we use special character in username_db and password_db then we have to encode then put encoded value into string. <br>
 import urllib.parse<br>
 username = "myUser@"<br>
