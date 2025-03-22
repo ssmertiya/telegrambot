@@ -35,11 +35,12 @@ Database: MongoDB Atlas
 •	Revised String: - “mongodb+srv://<username>:<db_password>@<cluster_name>.fy4hf.mongodb.net/?retryWrites=true&w=majority&appName=<cluster_name>”&authSource=admin<br>
 <br>
 •	If we use special character in username_db and password_db then we have to encode then put encoded value into string. <br>
+<br>
 import urllib.parse<br>
 username = "myUser@"<br>
 password = "myP@ssw#rd!"<br>
 encoded_username = urllib.parse.quote_plus(username)<br>
 encoded_password = urllib.parse.quote_plus(password)<br>
-
+<br>
 5.Finally write a python code for this project (Telegram Bot Data Logger)
 
