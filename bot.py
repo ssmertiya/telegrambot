@@ -42,7 +42,7 @@ async def store_photo_with_text(update: Update, context: ContextTypes.DEFAULT_TY
 def main():
     app = Application.builder().token(BOT_TOKEN).build()
     app.add_handler(MessageHandler(filters.PHOTO | filters.CAPTION |filters.TEXT, store_photo_with_text))
-    print("🚀 Bot is running...")
+    print("Bot is running...")
     app.run_polling()
 
 if __name__ == "__main__":
