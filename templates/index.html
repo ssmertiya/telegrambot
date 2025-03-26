@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telegram Bot Data</title>
+</head>
+<body>
+    <h2>📸 Telegram Bot Messages</h2>
+    {% for item in data %}
+        <div>
+            <p><b>User:</b> {{ item.username }}</p>
+            <p><b>Message:</b> {{ item.message }}</p>
+            {% if item.image_url %}
+                <img src="{{ item.image_url }}" alt="Image" width="300">
+            {% else %}
+                <p>No Image</p>
+            {% endif %}
+            <hr>
+        </div>
+    {% endfor %}
+</body>
+</html>
